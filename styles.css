@@ -43,6 +43,14 @@ main {
     margin-bottom: 40px;
 }
 
+#introduction img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
 #skills {
     display: flex;
     justify-content: space-between;
@@ -50,12 +58,28 @@ main {
     max-width: 800px;
 }
 
-#skills > div {
+.skill-box {
     background-color: #fff;
     padding: 20px;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     width: 45%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+#resume img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    float: right;
+    margin-left: 20px;
 }
 
 footer {
